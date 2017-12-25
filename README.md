@@ -13,9 +13,9 @@ To train run "python main.py". Traning took around two hours on our Google Cloud
 #### Reconstruction and Classification Results
 
 ##### Single Letter
-![ ](https://i.imgur.com/dSg4ISy.png)
+![ ](https://imgur.com/gwNabrp.png)
 ##### MULTI Letter
-![ ](https://i.imgur.com/xHS766c.png)
+![ ](https://imgur.com/a/5sTFu.png)
 ##### Single Letter Classification: Error rate on test set:
 ![ ](https://imgur.com/oDRMYOJ.png)
 ##### Single Letter: Loss reconstruction on test set:
