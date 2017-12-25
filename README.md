@@ -15,15 +15,15 @@ To train run "python main.py". Traning took around two hours on our Google Cloud
 ##### Single Letter
 ![ ](https://i.imgur.com/dSg4ISy.png)
 ##### MULTI Letter
-![ ](https://pasteboard.co/GZUgP6X.png)
+![ ](https://i.imgur.com/xHS766c.png)
 ##### Single Letter Classification: Error rate on test set:
-![ ](https://pasteboard.co/GZUfke0.jpg)
+![ ](https://imgur.com/oDRMYOJ.png)
 ##### Single Letter: Loss reconstruction on test set:
-![ ](https://pasteboard.co/GZUfA7p.jpg)
+![ ](https://imgur.com/295zIRs.png)
 ##### MULTI Letter Classification: Error rate on test set:
-![ ](https://pasteboard.co/GZUfKR6.jpg)
+![ ](https://imgur.com/evEX7AO.png)
 ##### MULTI Letter: Loss reconstruction on test set:
-![ ](https://pasteboard.co/GZUfWhm.jpg)
+![ ](https://imgur.com/sdYzWj3.png)
 
 #### An Introduction
 
