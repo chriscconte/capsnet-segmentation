@@ -62,20 +62,3 @@ def multi_train_iter(iters=1000,batch_size=32):
 
         yield images, np.stack([y0,y1,y2], axis=-1)
 
-
-'''
-m_train_iter = mnist_train_iter()
-m_test_iter = mnist_test_iter()
-mm_train_iter = multimnist_train_iter()
-mm_test_iter = multimnist_test_iter()
-for i in range(10):
-    img_mtrain = m_train_iter.next()[0][0]
-    img_mtest = m_test_iter.next()[0][0]
-    img_mmtrain = mm_train_iter.next()[0][0]
-    img_mmtest = mm_test_iter.next()[0][0]
-    cv2.imshow('mnist_train',cv2.resize(img_mtrain,dsize=(128,128)))
-    cv2.imshow('mnist_test', cv2.resize(img_mtest,dsize=(128,128)))
-    cv2.imshow('multimnist_train', cv2.resize(img_mmtrain,dsize=(128,128)))
-    cv2.imshow('multimnist_test', cv2.resize(img_mmtest,dsize=(128,128)))
-    cv2.waitKey(-1)
-'''
