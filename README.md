@@ -13,7 +13,7 @@ To train run "python main.py". Traning took around two hours on our Google Cloud
 #### Reconstruction and Classification Results
 
 ##### Single Letter
-![ ](https://pasteboard.co/GZUgzsr.png)
+![alt text](https://pasteboard.co/GZUgzsr.png)
 ##### MULTI Letter
 ![ ](https://pasteboard.co/GZUgP6X.png)
 ##### Single Letter Classification: Error rate on test set:
