@@ -1,3 +1,3 @@
-#### Overlapping Object Segmentation
-### By: Chris Conte, Kaveh Issapour, and Andrew Sohn
+### Overlapping Object Segmentation
+#### By: Chris Conte, Kaveh Issapour, and Andrew Sohn
 
