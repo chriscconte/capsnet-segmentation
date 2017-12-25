@@ -10,7 +10,7 @@ def one_hot(y, num_classes=10):
 
     return y_hot
 
-def multi_train_iter(iters=1000,batch_size=32,is_shift_ag=True, max_offset=4):
+def multi_train_iter(iters=1000,batch_size=32):
 
     train = []
     for subdir, dirs, files in os.walk('./masked'):
