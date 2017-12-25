@@ -3,13 +3,31 @@
 #### Deep Learning Final Project
 
 #### Original Paper
+
 The idea for this Netowrk came from Sara Sabour, Nicholas Frosst, and Geoffrey Hinton's Paper, Dynamic Routing Between Capsules. This paper can be found here: https://arxiv.org/abs/1710.09829 . 
 
-####
+#### Training.
 
-#### Introduction
+To train run "python main.py". Traning took around two hours on our Google Cloud Instance 
 
-Human vision excels at both focusing on objects within a noisy environment and identifying object shapes regardless of the orientation, size or angle. The current understanding of how we do so effectively is to build images based on a few carefully selected fixation points [1]. Further, current literature takes the approach of progressively characterizing specific features that we know to belong to different items [2]. Current approaches have used convolutional neural networks to great effect in a limited number of cases. They however struggle in identifying objects in three dimensions that are from different angles, or two dimensional objects that have had severe affine transformations, like those found in CAPTCHA images. They also struggle to identify highly overlapping images, as they are reliant on building a specific set of sub-features for every image. 
+#### Reconstruction and Classification Results
+
+##### Single Letter
+![](https://pasteboard.co/GZUgzsr.png)
+##### MULTI Letter
+![](https://pasteboard.co/GZUgP6X.png)
+##### Single Letter Classification: Error rate on test set:
+![](https://pasteboard.co/GZUfke0.jpg)
+##### Single Letter: Loss reconstruction on test set:
+![](https://pasteboard.co/GZUfA7p.jpg)
+##### MULTI Letter Classification: Error rate on test set:
+![](https://pasteboard.co/GZUfKR6.jpg)
+##### MULTI Letter: Loss reconstruction on test set:
+![](https://pasteboard.co/GZUfWhm.jpg)
+
+#### An Introduction
+
+Human vision excels at both focusing on objects within a noisy environment and identifying object shapes regardless of the orientation, size or angle. The current understanding of how we do so effectively is to build images based on a few carefully selected fixation points. Further, current literature takes the approach of progressively characterizing specific features that we know to belong to different items. Current approaches have used convolutional neural networks to great effect in a limited number of cases. They however struggle in identifying objects in three dimensions that are from different angles, or two dimensional objects that have had severe affine transformations, like those found in CAPTCHA images. They also struggle to identify highly overlapping images, as they are reliant on building a specific set of sub-features for every image. 
 
 Part of this struggle originates from a reliance on ‘max pool’ layers. These have been used alongside convolutional layers. Max pool has a fundamental issue however, which is that by simply taking a maximum value, we are losing a lot of information every time the networks representation of something gets more complex. This results in features of transformed objects that have different orientations, thus different small features, but similar in larger, more conceptual ways to be lost in the lower layers. This paper uses an idea that is illustrated in Hinton’s 2017 paper, dynamic routing, in order to avoid this information loss and thus preserve information until larger conceptual connections can be made. Further, the information loss of max pooling is a detriment obscured images. The features that make up an image can be pooled out to the point where the classifier cannot identify the class of an object.
 
