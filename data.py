@@ -41,9 +41,6 @@ def multi_train_iter(iters=1000,batch_size=32):
 
             if np.array_equal(_y1, _y2):
                 continue
-            _image1 = augmentation(_image1, max_offset)
-            _image2 = augmentation(_image2, max_offset)
-
 
             _images = np.maximum(_image1,_image2)
             _images = np.concatenate([_images,_image1,_image2], axis=-1)
