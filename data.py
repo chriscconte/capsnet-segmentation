@@ -4,7 +4,7 @@ import numpy as np
 import os
         yield augmentation(images,max_offset), np.stack([batch[1]]*3, axis=-1)
 
-def one_hot(y, num_classes=10):
+def one_hot(y, num_classes=52):
     y_hot = np.zeros((num_classes,))
     y_hot[y] = 1.0
 
@@ -15,10 +15,8 @@ def multi_train_iter(iters=1000,batch_size=32):
     train = []
     for subdir, dirs, files in os.walk('./masked'):
         for f in files:
-            if ord(f[0]) > ord('J'):
-                continue
-            #if ord(f[0]) > ord('Z'):
-            #    label = ord(f[0]) - 71
+            if ord(f[0]) > ord('Z'):
+                label = ord(f[0]) - 71
             else:
                 label = ord(f[0]) - 65
             if '.png' not in f:
